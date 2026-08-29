@@ -12,6 +12,7 @@ import job from './lib/cron.js';
 
 import { clerkMiddleware } from '@clerk/express';
 import authRoutes from './routes/auth.route.js';
+import messageRoutes from './routes/message.route.js';
 import clerkWebhook from './webhooks/clerk.webhook.js';
 
 import { connectDB } from './lib/db.js';
@@ -31,6 +32,7 @@ app.use(
 );
 
 app.use('/api/auth', authRoutes);
+app.use('/api/messages', messageRoutes);
 
 app.use(express.json());
 app.use(cors({ origin: FRONTEND_URL, credentials: true }));
