@@ -13,9 +13,11 @@
     "@clerk/react": "^6.14.8",
     "@heroui/react": "^3.2.4",
     "@heroui/styles": "^3.2.4",
+    "@react-aria/utils": "^3.33.0",
     "@tailwindcss/vite": "^4.3.3",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
+    "react-router": "^8.3.1",
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
