@@ -1,5 +1,5 @@
 import { useAuth } from '@clerk/react';
-import { Routes } from 'react-router';
+import { Navigate, Route, Routes } from 'react-router';
 import { ThemeProvider } from './context/ThemeContext';
 import { WallpaperProvider } from './context/WallpaperContext';
 import AuthPage from './pages/AuthPage';
