@@ -1,5 +1,5 @@
 import { hasImageKitConfig, uploadChatMedia } from '../lib/imagekit.js';
-import { getReceiverSocketId } from '../lib/socket.js';
+import { getReceiverSocketId, io } from '../lib/socket.js';
 import Message from '../models/message.model.js';
 import User from '../models/user.model.js';
 
@@ -118,7 +118,7 @@ export async function sendMessage(req, res) {
     await newMessage.save();
 
     const receiverSocketId = getReceiverSocketId(receiverId);
-    // onlt send the message in real time if user is online
+    // only send the message in realtime if user is online
     if (receiverSocketId) {
       io.to(receiverSocketId).emit('newMessage', newMessage);
     }
