@@ -1,11 +1,11 @@
-import { UserButton } from '@clerk/react';
 import {
   getInitials,
   useSelectedConversation,
 } from '../../hooks/useSelectedConversation';
-import { useAuthStore } from '../../stores/useAuthStore';
-import { useChatStore } from '../../stores/useChatStore';
+import { useAuthStore } from '../../store/useAuthStore';
+import { useChatStore } from '../../store/useChatStore';
 import { APP_NAME, AppLogo } from '../AppLogo';
+import { UserButton } from '@clerk/react';
 
 import { SearchField, Tabs } from '@heroui/react';
 import { MessageSquareIcon, UsersIcon } from 'lucide-react';

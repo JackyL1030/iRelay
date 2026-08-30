@@ -1,7 +1,7 @@
 import useScrollToBottom from '../../hooks/useScrollToBottom';
-import { useSelectedConversation } from '../../hooks/useSelectedConversation';
 import { MessageBubble } from './MessageBubble';
 import { NoConversationPlaceholder } from './NoConversationPlaceholder';
+import { useSelectedConversation } from '../../hooks/useSelectedConversation';
 
 export function MessageList() {
   const { activeConversation, activeConversationId } =

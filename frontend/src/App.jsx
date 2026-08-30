@@ -1,12 +1,12 @@
-import { useAuth } from '@clerk/react';
-import { useEffect } from 'react';
-import { Navigate, Route, Routes } from 'react-router';
-import PageLoader from './components/PageLoader';
-import { ThemeProvider } from './context/ThemeContext';
 import { WallpaperProvider } from './context/WallpaperContext';
-import AuthPage from './pages/AuthPage';
+import { ThemeProvider } from './context/ThemeContext';
+import { Navigate, Route, Routes } from 'react-router';
 import ChatPage from './pages/ChatPage';
-import { useAuthStore } from './stores/useAuthStore';
+import AuthPage from './pages/AuthPage';
+import { useAuth } from '@clerk/react';
+import PageLoader from './components/PageLoader';
+import { useAuthStore } from './store/useAuthStore';
+import { useEffect } from 'react';
 
 import { Toaster } from 'react-hot-toast';
 
