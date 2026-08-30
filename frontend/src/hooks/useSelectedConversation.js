@@ -1,6 +1,6 @@
 import { formatMessageTime } from '../lib/utils';
-import { useAuthStore } from '../store/useAuthStore';
-import { useChatStore } from '../store/useChatStore';
+import { useAuthStore } from '../stores/useAuthStore';
+import { useChatStore } from '../stores/useChatStore';
 import { useMediaQuery } from './useMediaQuery';
 
 // John Doe -> JD
