@@ -8,6 +8,10 @@ import ChatPage from './pages/ChatPage';
 function App() {
   const { isSignedIn, isLoaded } = useAuth();
 
+  if(!isLoaded) {
+    return <p>Loading...</p>;
+  }
+
   return (
     <ThemeProvider>
       <WallpaperProvider>
